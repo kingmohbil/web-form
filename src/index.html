@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="leftSide">
+      <div class="imageContainer">
+        <div class="odinLogo">
+          <img
+            src="../Assets/odin-lined.png"
+            alt="odinLogoPic"
+            class="odinLogoImage"
+          />
+          <div class="oidinText">ODIN</div>
+        </div>
+        <div class="picLink">
+          Photo by
+          <a
+            href="https://unsplash.com/photos/25xggax4bSA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
+            target="_blank"
+          >
+            Halie West
+          </a>
+          on
+          <a href="https://unsplash.com" target="_blank">unsplash</a>
+        </div>
+      </div>
+    </div>
+    <div class="rightSide">
+      <div class="description">
+        <div class="topText">
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up now
+          to get started.
+        </div>
+        <div class="lowerText">You know you want to.</div>
+      </div>
+      <div class="formContainer">
+        <div class="caption">Let's do this!</div>
+        <form class="form" id="form">
+          <div class="formInputs">
+            <div class="formLeft">
+              <div class="fnameContainer">
+                <label for="fname" class="fnameLabel">*First Name</label><br />
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  class="fnameInput"
+                  placeholder="Jhon..."
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <div class="emailContainer">
+                <label for="email" class="emailLabel">*Email</label><br /><input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="emailInput"
+                  placeholder="Jhon@example.com"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <div class="password1Container">
+                <label for="password1" class="password1Label">*Password</label
+                ><br /><input
+                  type="password"
+                  name="password1"
+                  id="password1"
+                  class="password1Input"
+                  required
+                />
+                <br /><span class="Messege">Passwords Doesn't match</span>
+              </div>
+            </div>
+            <div class="formRight">
+              <div class="lnameContainer">
+                <label for="lname">*Last Name</label><br /><input
+                  type="tel"
+                  name="lname"
+                  id="lname"
+                  class="lnameInput"
+                  placeholder="Doe..."
+                  required
+                />
+              </div>
+              <div class="telContainer">
+                <label for="phone" class="telLabel">Phone Number</label
+                ><br /><input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  class="telInput"
+                />
+              </div>
+              <div class="password2Container">
+                <label for="password2" class="password2Label"
+                  >*Confirm Password</label
+                ><br /><input
+                  type="password"
+                  name="password2"
+                  id="password2"
+                  class="password2Input"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="submitContainer">
+            <button
+              type="submit"
+              id="submitBtn"
+              name="submitBtn"
+              class="submitBtn"
+            >
+              Create Account
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="signIn">
+        Already have an account? <a class="signInLink" href="">sign in</a>
+      </div>
+    </div>
+  </body>
+</html>
