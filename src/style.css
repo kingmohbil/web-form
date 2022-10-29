@@ -1,0 +1,151 @@
+:root {
+  box-sizing: border-box;
+  --light-green: #596d48;
+  --padding-left: 60px;
+  --normal-font: 24px;
+  --back-clr: rgb(238, 238, 238);
+}
+@font-face {
+  font-family: nordish;
+  src: url('../Assets/Norse-Bold.otf');
+}
+@font-face {
+  font-family: sultan;
+  src: url('../Assets/Sultan.otf');
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+.leftSide {
+  height: 100vh;
+  min-width: 30vw;
+  position: relative;
+  display: flex;
+}
+.imageContainer {
+  width: 100%;
+  height: 100%;
+  background: url('../Assets/nature.jpg');
+  background-size: cover;
+}
+.odinLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5555);
+  position: relative;
+  top: 180px;
+  padding: 20px;
+  font-size: 100px;
+  font-family: nordish;
+  color: white;
+}
+.odinLogoImage {
+  height: 125px;
+}
+.rightSide {
+  height: 100vh;
+  flex: auto;
+  background-color: var(--back-clr);
+}
+.topText {
+  width: 85%;
+  font-size: 36px;
+  padding-left: var(--padding-left);
+  margin-top: 14vh;
+  font-family: sultan;
+}
+.lowerText {
+  margin-top: 16px;
+  padding-left: var(--padding-left);
+  font-family: sultan;
+  font-size: 36px;
+}
+.formContainer {
+  background-color: white;
+  margin-top: 6vh;
+  height: auto;
+  padding-left: var(--padding-left);
+}
+.formInputs {
+  display: flex;
+  gap: 100px;
+  font-size: var(--normal-font);
+}
+.caption {
+  font-size: 36px;
+  font-family: sultan;
+}
+.formLeft,
+.formRight {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: var(--normal-font);
+}
+input {
+  padding: 4px;
+  font-size: var(--normal-font);
+  border: none;
+  outline: 2px solid grey;
+  background-color: var(--back-clr);
+}
+.submitContainer {
+  height: 25px;
+}
+.submitBtn {
+  position: relative;
+  top: 45px;
+  background-color: var(--light-green);
+  font-family: sultan;
+  font-size: var(--normal-font);
+  color: white;
+  padding: 8px 30px;
+  cursor: pointer;
+}
+.submitBtn:hover {
+  background-color: rgba(89, 109, 72, 0.8);
+}
+.picLink {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  color: white;
+  font-size: var(--normal-font);
+  font-family: sultan;
+}
+input:focus {
+  border: none;
+  outline: 2px solid blue;
+}
+a {
+  color: white;
+}
+.signInLink {
+  color: black;
+  font-family: sultan;
+}
+.signIn {
+  padding-left: var(--padding-left);
+  margin-top: 80px;
+  color: black;
+  font-family: sultan;
+  font-size: var(--normal-font);
+}
+label {
+  font-family: sultan;
+  font-size: 32px;
+}
+.password1Input.error,
+.password2Input.error {
+  outline-color: red;
+}
+.Messege {
+  color: red;
+  visibility: hidden;
+}
